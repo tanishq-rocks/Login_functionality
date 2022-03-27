@@ -1,0 +1,51 @@
+************ frontEnd *************
+email: <input>
+password: <input>
+Login: <button>
+forget password?: <a>
+
+email id: <input>
+new password: <input>
+confirm password: <input>
+submit: <button>
+
+
+
+***********************************
+
+************ backend ***************
+existing email id: "xyz@gmail.com"
+
+password reset ---------------------
+email, p1, p2
+
+if p1 != 0 and p1 == p2 and email != 0:
+    encrypt(p1) and store in database with email id
+    message: passed 
+else:
+    message: denied
+------------------------------------
+
+Login ------------------------------
+email, p
+
+if email !=0 and p != 0:
+    find (time and encrypted_password) from the database which has (email_id equal to email)
+    if encrypt(time, p) == encrypted_password:
+        pass
+    else:
+        fail
+
+-------------------------------------
+
+encrypt -----------------------------
+
+encrypt = (time, p1) => {
+    store (jsgjslslkgjdlkgjsdsgfsd, time, email_id)
+}
+
+-------------------------------------
+
+
+
+
